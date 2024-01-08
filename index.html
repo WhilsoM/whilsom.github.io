@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Visit Card</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="./assets/styles/reset.css" />
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<link rel="stylesheet" href="./assets/styles/media.css" />
+		<link rel="stylesheet" href="./assets/styles/animate.css" />
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/img/favicon-16x16.png"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<button class="btn">поменять тему</button>
+		</header>
+
+		<div class="hero">
+			<div class="container hero__container">
+				<div class="hero__about">
+					<h1
+						class="hero__title wow pulse"
+						data-wow-iteration="1000"
+						data-wow-delay=".5s"
+						data-wow-duration="3s"
+					>
+						Веб-разработчик
+					</h1>
+
+					<h2 class="hero__subtitle">Ахметов Артур</h2>
+					<p class="hero__description">
+						Занимаюсь версткой сайтов по макету в figma
+					</p>
+				</div>
+				<div class="hero__box">
+					<div id="slider-container">
+						<div id="slider">
+							<div class="slide">
+								<div class="hero__links">
+									<a
+										href="https://github.com/WhilsoM"
+										target="_blank"
+										class="hero__link"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="42"
+											height="42"
+											viewBox="0 0 24 24"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+											></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="slide">
+								<div class="hero__links">
+									<a
+										href="https://t.me/moonwqwizlio"
+										target="_blank"
+										class="hero__link"
+									>
+										<svg
+											class="telegram"
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+											></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<button class="arrow-left" id="prev" onclick="prevSlide()">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								style="width: 5em"
+							>
+								<path
+									d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"
+								></path>
+							</svg>
+						</button>
+						<button class="arrow-right" id="next" onclick="nextSlide()">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								style="width: 5em"
+							>
+								<path
+									d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+								></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer><div>© the site was made by Arthur Akhmetov</div></footer>
+
+		<script src="./assets/script/script.js"></script>
+		<script src="./assets/script/wow.min.js"></script>
+		<script>
+			new WOW().init()
+		</script>
+	</body>
+</html>
